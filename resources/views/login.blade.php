@@ -8,7 +8,7 @@
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
 
     <div class="w-full max-w-sm bg-white p-8 rounded-xl shadow-md">
-        <h2 class="text-2xl font-bold text-center mb-6">Login</h2>
+        <h2 class="text-2xl font-bold text-center mb-6">Subhx Login</h2>
 
         <form method="POST" action="{{ url('/login') }}" class="space-y-4">
             @csrf
