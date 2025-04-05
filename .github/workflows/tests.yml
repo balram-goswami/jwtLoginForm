@@ -40,6 +40,15 @@ jobs:
       - name: Copy environment file
         run: cp .env.example .env
 
+         - name: Run migrations
+        run: php artisan migrate --force
+
+      - name: Seed database
+        run: php artisan db:seed --force
+
+      - name: Execute tests
+        run: vendor/bin/phpunit
+
       - name: Generate app key
         run: php artisan key:generate
 
